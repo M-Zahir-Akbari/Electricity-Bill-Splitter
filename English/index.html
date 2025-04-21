@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 📄 Basic page settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Electricity Bill Splitter</title>
+
+    <!-- 🎨 External stylesheet for layout and styling -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 🔤 Google Fonts: Poppins for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- 📄 html2pdf.js for exporting the screen as PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 💡 Main Application Container -->
+    <div class="container">
+      <h1>🔌 Electricity Bill Splitter</h1>
+
+      <!-- 🕒 Live Date & Time Display -->
+      <table>
+        <tr>
+          <td colspan="2" id="date-time-td"></td>
+        </tr>
+
+        <!-- 💰 Total Bill & Units Input Header -->
+        <tr>
+          <th>Total Bill Amount (AFN)</th>
+          <th>Number of Units</th>
+        </tr>
+
+        <!-- 🔢 Input Fields for Bill and Units -->
+        <tr>
+          <td>
+            <input type="number" id="billAmount" placeholder="e.g., 3000" />
+          </td>
+          <td>
+            <input
+              type="number"
+              id="unitCount"
+              placeholder="e.g., 4"
+              oninput="generateFields()" 
+            /> <!-- 🔄 Dynamically creates unit fields -->
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <!-- 🔲 Placeholder for Unit Readings -->
+      <div id="unitInputs"></div>
+
+      <!-- 🧮 Compute & Reset Buttons -->
+      <div class="button-group">
+        <button class="compute" onclick="computeBills()">Compute</button>
+        <button class="reset" onclick="resetAll()">Reset</button>
+      </div>
+
+      <!-- ✅ Success Message Badge (Initially Hidden) -->
+      <div
+        id="statusBadge"
+        class="status-badge success"
+        style="display: none; text-align: center"
+      >
+        ✅ Calculation Successful
+      </div>
+
+      <!-- 📊 Output Result Section -->
+      <div id="result" class="results" style="display: none;"></div>
+
+      <!-- 📄 PDF Download Button (Hidden until computed) -->
+      <div id="downloadArea" style="display: none; text-align: center; margin-top: 10px;">
+        <button class="download" onclick="downloadFullPDF()">📄 Download Full Report</button>
+      </div>
+    </div>
+
+    <!-- ⚙️ JavaScript logic for calculations and actions -->
+    <script src="script.js"></script>
+  </body>
+</html>

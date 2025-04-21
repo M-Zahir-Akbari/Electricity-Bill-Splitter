@@ -1,0 +1,155 @@
+/* 🌐 General Page Style */
+body {
+  font-family: 'Poppins', sans-serif; /* Modern Google font */
+  padding: 20px;
+  background: #f5f5f5; /* Light gray background */
+  margin: 0;
+}
+
+/* 🔠 Main Heading Style */
+h1 {
+  text-align: center;
+  color: #333; /* Dark gray for readability */
+}
+
+/* 📦 Main Container */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background: #ffffff; /* White card style */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+/* 🧾 Table Alignment */
+table {
+  margin: 0 auto; /* Center the table */
+}
+
+/* 🕒 Date & Time Display Cell */
+#date-time-td {
+  text-align: center;
+  padding: 20px;
+}
+
+/* 🔤 Table Cell Alignment */
+td {
+  text-align: center;
+}
+
+/* 🏷️ Field Labels */
+label {
+  font-weight: bold;
+}
+
+/* 🔢 Input Fields */
+input[type="number"] {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box; /* Prevent overflow */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  direction: ltr; /* Left-to-right numbers */
+}
+
+/* 🔲 Each Unit Block (Card Style) */
+.unit-fields {
+  background: #f8f9fa; /* Light gray card */
+  border: 1px solid #dee2e6; /* Soft border */
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+/* 🔘 Button Container (Side-by-side) */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 🧷 Base Button Style */
+button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* ✅ Compute Button */
+button.compute {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+button.compute:hover {
+  background-color: #218838;
+}
+button.compute:active {
+  background-color: #1e7e34;
+  transform: scale(0.98); /* Slight press effect */
+}
+
+/* ❌ Reset Button */
+button.reset {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+button.reset:hover {
+  background-color: #c82333;
+}
+button.reset:active {
+  background-color: #bd2130;
+  transform: scale(0.98);
+}
+
+/* 📄 Download Button */
+button.download {
+  background-color: #007bff; /* Blue */
+  color: white;
+  padding: 8px;
+}
+button.download:hover {
+  background-color: #0069d9;
+}
+button.download:active {
+  background-color: #005cbf;
+  transform: scale(0.98);
+}
+
+/* 📊 Results Box */
+.results {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #e6ffed; /* Soft green background */
+  border-left: 5px solid #28a745; /* Green accent */
+}
+
+/* 📱 Responsive Layout */
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+  }
+}
+
+/* ✅ Status Badge Styling */
+.status-badge {
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 15px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Status badge for success result */
+.status-badge.success {
+  background-color: #d4edda; /* Light green */
+  color: #155724;
+  border-left: 4px solid #28a745;
+}

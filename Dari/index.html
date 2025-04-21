@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <!-- 📄 تنظیمات پایه صفحه -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>تقسیم بل برق</title>
+
+    <!-- 🎨 فایل استایل برای طراحی ظاهری -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 🔤 فونت زیبای پاپینز از گوگل -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- 📄 کتابخانه برای دانلود PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 💡 جعبه اصلی اپلیکیشن -->
+    <div class="container">
+      <h1>🔌 تقسیم بل برق</h1>
+
+      <!-- 🕒 نمایش تاریخ و زمان فعلی -->
+      <table>
+        <tr>
+          <td colspan="2" id="date-time-td"></td>
+        </tr>
+
+        <!-- 💰 ورودی مقدار بل و تعداد واحدها -->
+        <tr>
+          <th>مجموع بل (افغانی)</th>
+          <th>تعداد واحدها</th>
+        </tr>
+
+        <!-- 🔢 فیلدهای ورودی برای بل و تعداد -->
+        <tr>
+          <td>
+            <input type="number" id="billAmount" placeholder="مثلاً ۳۰۰۰" />
+          </td>
+          <td>
+            <input
+              type="number"
+              id="unitCount"
+              placeholder="مثلاً ۴"
+              oninput="generateFields()" 
+            />
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <!-- 🔲 ناحیه‌ی ایجاد فیلدهای ورودی واحدها -->
+      <div id="unitInputs"></div>
+
+      <!-- 🧮 دکمه‌های محاسبه و ریست -->
+      <div class="button-group">
+        <button class="compute" onclick="computeBills()">محاسبه</button>
+        <button class="reset" onclick="resetAll()">تنظیم مجدد</button>
+      </div>
+
+      <!-- ✅ نشان موفقیت (در ابتدا پنهان است) -->
+      <div
+        id="statusBadge"
+        class="status-badge success"
+        style="display: none; text-align: center"
+      >
+        ✅ محاسبه موفقانه انجام شد
+      </div>
+
+      <!-- 📊 نمایش نتایج محاسبه -->
+      <div id="result" class="results" style="display: none;"></div>
+
+      <!-- 📄 دکمه دانلود فایل PDF -->
+      <div id="downloadArea" style="display: none; text-align: center; margin-top: 10px;">
+        <button class="download" onclick="downloadFullPDF()">📄 دریافت گزارش</button>
+      </div>
+    </div>
+
+    <!-- ⚙️ فایل جاوااسکریپت برای منطق اپلیکیشن -->
+    <script src="script.js"></script>
+  </body>
+</html>
