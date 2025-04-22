@@ -97,7 +97,7 @@ Created with ❤️ by **Mohammad Zahir Akbari**
 📍 Based in Afghanistan  
 💬 Passionate about technology, Web App & Mobile App Development, and clean user experience  
 🔗 [GitHub](https://github.com/m-zahir-akbari)
-🔗 [LinkedIn](https://linkedin.com/m-zahir-akbari786)
+🔗 [LinkedIn](https://linkedin.com/in/m-zahir-akbari786)
 
 ---
 
