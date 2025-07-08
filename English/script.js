@@ -143,7 +143,7 @@ function resetAll() {
 // 📄 Generate and download a PDF report of the current screen
 function downloadFullPDF() {
   const element = document.querySelector('.container'); // Capture entire form area
-  const filename = "Electricity_Bill_Report_2025_04_20_19_59.pdf"; // Use fixed or dynamic name
+  const filename = "Electricity_Bill_Report.pdf"; // Use fixed or dynamic name
 
   const opt = {
     margin: 0.5,
