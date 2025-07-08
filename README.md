@@ -52,11 +52,13 @@ This app is currently available in **two languages**: **Dari** and **English**, 
 
 ## Usage
 
-1. Enter the total bill amount (in AFN).
-2. Enter the number of units (apartments).
-3. For each unit, input the previous and current meter readings.
-4. Click **Compute** to calculate the usage and costs.
-5. If everything is valid, you'll see a success badge and the option to download a PDF report.
+1. Access **Dari** version through this link: 'https://ebs-zahir-baran.vercel.app'
+2. Access **English** version through this link: 'https://ebs-zahir-baran-en.vercel.app'
+3. Enter the total bill amount (in AFN).
+4. Enter the number of units (apartments).
+5. For each unit, input the previous and current meter readings.
+6. Click **Compute** to calculate the usage and costs.
+7. If everything is valid, you'll see a success badge and the option to download a PDF report.
 
 ---
 
