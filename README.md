@@ -67,7 +67,7 @@ This app is currently available in **two languages**: **Dari** and **English**, 
 - **English UI**  
   ![English](English/screenshot.png)
 
-- **Dari UI**  
+- **Dari User Interface**  
   ![Dari](Dari/screenshot.png)
 
 ---
