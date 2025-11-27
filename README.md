@@ -2,7 +2,7 @@
 
 A lightweight and responsive web application to fairly split electricity bills among multiple units or apartments based on their individual usage.
 
-This app is currently available in **two languages**: **Dari** and **English**, and localization support will be integrated in future versions for smoother language switching.
+This app is currently available in **two languages**: **Dari** & **English**, and localization support will be integrated in future versions for smoother language switching.
 
 ---
 
